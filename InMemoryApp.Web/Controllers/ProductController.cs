@@ -31,6 +31,17 @@ namespace InMemoryApp.Web.Controllers
 
             // --> givin and sliding live time to cache. This will extends like given time whether you trigger the action method.
             options.SlidingExpiration = TimeSpan.FromSeconds(10);
+            // --> giving priority to cache (CacheItemPriority.NeverRemove making cached value permantent, becareful when you use this.)
+            options.Priority = CacheItemPriority.High;
+
+
+            //using RegisterPostEvicitionCallBack Method
+
+            options.RegisterPostEvictionCallback((key,value,reason,state) => {
+                _memoryCache.Set("callback", $"{key} --> {value}  ==> sebep: {reason}");
+            });
+
+
 
             _memoryCache.Set<string>("zaman", DateTime.Now.ToString(), options);
 
@@ -47,7 +58,8 @@ namespace InMemoryApp.Web.Controllers
             //});
 
             _memoryCache.TryGetValue("zaman", out string zamancache);
-
+            _memoryCache.TryGetValue("callback", out string callback);
+            ViewBag.callback = callback;
             ViewBag.zaman = zamancache;
 
 
