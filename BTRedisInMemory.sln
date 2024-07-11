@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InMemoryApp.Web", "InMemoryApp.Web\InMemoryApp.Web.csproj", "{DAD710D3-9F9F-4FDB-9E3E-8E76FC3B33AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAD710D3-9F9F-4FDB-9E3E-8E76FC3B33AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD710D3-9F9F-4FDB-9E3E-8E76FC3B33AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD710D3-9F9F-4FDB-9E3E-8E76FC3B33AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD710D3-9F9F-4FDB-9E3E-8E76FC3B33AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C52E03D-353E-4733-8C11-DA8CE3C05C2C}
+	EndGlobalSection
+EndGlobal
